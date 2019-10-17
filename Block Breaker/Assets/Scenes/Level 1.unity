@@ -132,12 +132,12 @@ GameObject:
   - component: {fileID: 486870947}
   - component: {fileID: 486870949}
   m_Layer: 0
-  m_Name: Lose Collider
+  m_Name: Loose Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &486870947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 593114380}
   - component: {fileID: 593114382}
   - component: {fileID: 593114383}
+  - component: {fileID: 593114384}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -349,7 +350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593114379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.48, y: 7.98, z: -2}
+  m_LocalPosition: {x: 5.45, y: 1.675, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -392,6 +393,19 @@ CircleCollider2D:
   m_Offset: {x: 0.008463979, y: 0.015235186}
   serializedVersion: 2
   m_Radius: 0.26583028
+--- !u!114 &593114384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593114379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203134ac0cc3b9446b0911bf58791659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPaddle: {fileID: 1009386283}
 --- !u!1 &1009386279
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +417,7 @@ GameObject:
   - component: {fileID: 1009386281}
   - component: {fileID: 1009386280}
   - component: {fileID: 1009386282}
+  - component: {fileID: 1009386283}
   m_Layer: 0
   m_Name: Paddle
   m_TagString: Untagged
@@ -467,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009386279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.45, y: 1.1, z: -1}
+  m_LocalPosition: {x: 5.45, y: 1.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -505,6 +520,19 @@ PolygonCollider2D:
       - {x: 1.28, y: -0.32}
       - {x: 1.28, y: 0.089999996}
       - {x: 1.0699999, y: 0.17999999}
+--- !u!114 &1009386283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009386279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e9e190cae7c2c4b9e5e14612b59d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenWidthInUnits: 16
 --- !u!1 &1626901057
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +607,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626901057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
